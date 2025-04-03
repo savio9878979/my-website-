@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exclusive Secret Video - Unlock Now</title>
+    <meta name="description" content="Unlock and watch an exclusive secret video! Click on an ad to access hidden content.">
+    <style>
+        body { text-align: center; font-family: Arial, sans-serif; padding: 20px; background-color: #f8f9fa; }
+        .container { max-width: 800px; margin: auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); }
+        h2 { color: #333; }
+        p { font-size: 18px; color: #555; }
+        #video-container { display: none; margin-top: 20px; }
+        button {
+            padding: 12px 24px;
+            font-size: 18px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        button:hover { background-color: #218838; }
+        img { width: 100%; max-height: 300px; border-radius: 10px; margin-top: 15px; }
+    </style>
+    <script>
+        function unlockVideo() {
+            // Open the PropellerAds Smart Link in a new tab
+            window.open('YOUR_PROPELLERADS_SMARTLINK', '_blank');
+
+            // Wait for 5 seconds, then show the video
+            setTimeout(function() {
+                document.getElementById("video-container").style.display = "block";
+                document.getElementById("unlock-btn").style.display = "none";
+                document.getElementById("message").textContent = "Enjoy your exclusive content!";
+            }, 5000); // 5-second delay
+        }
+    </script>
+</head>
+<body>
+
+    <div class="container">
+        <h2>🔥 Unlock an Exclusive Secret Video! 🔥</h2>
+        <p>Click the button below, interact with an ad, and gain access to an exclusive, never-before-seen video!</p>
+
+        <!-- Image for better engagement -->
+        <img src="image1.jpg" alt="Secret Video Preview">
+
+        <p id="message"><strong>Step 1:</strong> Click the button below and interact with an ad.<br>  
+           <strong>Step 2:</strong> After clicking, your exclusive video will be revealed! 🎬</p>
+
+        <button id="unlock-btn" onclick="unlockVideo()">🔓 Unlock Video</button>
+
+        <!-- Image for trust and engagement -->
+        <img src="image2.jpg" alt="Special Content Teaser">
+
+        <div id="video-container">
+            <h3>✅ Your Secret Video:</h3>
+            <video width="600" controls>
+                <source src="your-secret-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+</body>
+</html>
